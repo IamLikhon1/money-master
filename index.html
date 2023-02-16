@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <section class="w-1/2 ml-80 p-6 bg-gray-300">
+        <div class="ml-32 rounded-md "  >
+            <h3 class="text-2xl font-semibold ml-24">Income</h3>
+           <span class="font-medium">Income :  </span> <input id="getIncome" type="number" class="w-60 p-2 mt-4 rounded-md" name="" id="" placeholder="Enter Your Income">
+           <h3 class="text-2xl mt-3 font-semibold ml-24 ">Expenses</h3>
+           <span class="font-medium">Food : </span> <input id="foodCost" type="number" class="w-60 p-2 mt-6 rounded-md" name="" id="" placeholder="Enter Your Food Cost"> <br> <br>
+           <span class="font-medium">Rent : </span> <input id="rentCost" type="number" class="w-60 p-2 rounded-md" name="" id="" placeholder="Enter Your Rent Cost"> <br><br>
+           <span class="font-medium">Clothes : </span> <input id="clothesCost" type="number" class="w-60 p-2 rounded-md" name="" id="" placeholder="Enter Your Clothes Cost"> <br><br>
+           <button id="calculateBtn" class="w-56 p-2 font-medium rounded-md text-white bg-green-400 hover:bg-green-500 ml-12">Calculate</button>
+           <h3 class="text-2xl mt-3  font-semibold">Total Expenses:<span id="totalCost">00</span></h3>
+           <h3 class="text-2xl mt-3 font-semibold">Total Balance: <span id="totalBalance">00</span></h3>
+           <span class="font-medium">Save : </span> <input id="saveField" type="number" class="w-32 p-1 mt-3 rounded-md"  name="" id="" placeholder="Enter Your %"> <span class="font-semibold"> %</span> <button id= "saveBtn" class="w-24 p-2 font-medium rounded-md text-white bg-yellow-400 hover:bg-yellow-500 ml-5">Save</button>
+           <h3 class="text-2xl mt-3 font-semibold">Saving Amount:<span id="SaveAmount">00</span></h3>
+           <h3 class="text-2xl mt-3 font-semibold">Remaining Amount:<span id="remaining">00</span> </h3>
+        </div>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
